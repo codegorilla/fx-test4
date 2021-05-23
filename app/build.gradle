@@ -42,3 +42,11 @@ tasks.named('test') {
   // Use junit platform for unit tests.
   useJUnitPlatform()
 }
+
+task copyStuff (type: Copy) {
+  println 'COPYING HERE!'
+  from 'resources/hawaii-topo-large.png'
+  into 'build/poems'
+}
+
+compileJava.dependsOn copyStuff

@@ -9,3 +9,5 @@ gradle/
 gradlew
 gradlew.bat
 
+app/resources
+app/src/main/resources/images
